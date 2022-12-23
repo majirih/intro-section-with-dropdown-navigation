@@ -19,27 +19,31 @@
 
         <nav>
             <h1>snap</h1>
-            <select id="features" name="Features">
-                <option value="Features">Features</option>
-                <option value="Todo List"><img src="./images/icon-todo.svg">Todo List</option>
-                <option value="Calendar"><img src="./images/icon-calendar.svg">Calendar</option>
-                <option value="Reminders"><img src="./images/icon-reminders.svg">Reminders</option>
-                <option value="Planning"><img src="./images/icon-planning.svg">Planning</option>
-            </select>
-
-            <select id="company" name="Company">
-                <option value="Company">Company</option>
-                <option value="Histoy">History</option>
-                <option value="Our Team">Our Team</option>
-                <option value="Blog">Blog</option>
-            </select>
+            <div class="dropdown">
+                <button onClick="myFunction()" class="dropbtn">Features</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Todo List</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">Reminders</a>
+                    <a href="#">Planning</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onClick="toggleDropdown()"
+                class="dropbtn">Company</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="#">History</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
             <a href="#">Careers</a>
             <a href="#">About</a>
         </nav>
         <div>
             <nav>
                 <a href="#">Login</a>
-                <button>
+                <button class="register">
                     Register
                 </button>
             </nav>
@@ -50,16 +54,16 @@
             <h2>Make<br>remote work </h2>
             <p>Get your team in sync, no matter your location. Streamline processes, create team rituals and watch
                 productivity soar.</p>
-        <div class="learn-more-button">
-            <button type="button">Learn more</button>
-        </div>
-        <div class="watermark">
-            <img src="./images/client-databiz.svg">
-            <img src="./images/client-audiophile.svg">
-            <img src="./images/client-meet.svg">
-            <img src="./images/client-maker.svg">
-        </div>
-        
+            <div class="learn-more-button">
+                <button type="button">Learn more</button>
+            </div>
+            <div class="watermark">
+                <img src="./images/client-databiz.svg">
+                <img src="./images/client-audiophile.svg">
+                <img src="./images/client-meet.svg">
+                <img src="./images/client-maker.svg">
+            </div>
+
         </div>
         <div class="right-content">
 
@@ -69,9 +73,10 @@
         </div>
     </div>
     <br>
-    
 
 
+
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

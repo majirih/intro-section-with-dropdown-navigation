@@ -7,12 +7,16 @@ body{
 header{
     display:flex;
     justify-content: space-between;
-    align-items: center;
     padding-left: 30px;
     padding-top: 20px;
     padding-right: 30px;
     color:hsl(0, 0%, 8%);
     margin-bottom:80px;
+}
+nav{
+    display:flex;
+    align-items: center;
+    height:100%;
 }
 #company{
     margin-left:30px;
@@ -33,6 +37,13 @@ h1{
 }
 a{
     margin:0 30px;
+    color:hsl(0, 0%, 8%);
+    text-decoration: none;
+    color:hsl(0, 0%, 41%);
+    font-size: 18px;
+    font-weight:700;
+}
+a:hover, a:focus{
     color:hsl(0, 0%, 8%);
 }
 .container{
@@ -69,6 +80,7 @@ p{
     border-radius:15px;
     border-style: solid;
     font-weight: 700;
+    text-decoration: none;
     margin:50px 0;
     color:hsl(0, 0%, 8%);
     font-size:25px;
@@ -83,4 +95,44 @@ p{
 .watermark img {
     width:120px;
     margin: 0 15px ;
+}
+.dropbtn{
+    margin-left:30px;
+    cursor:pointer;
+    border:none;
+    background-color:  hsl(0, 0%, 98%);
+    color:hsl(0, 0%, 41%);
+    font-size: 18px;
+    font-weight:700;
+}
+.dropbtn:hover, .dropbtn:focus{
+    color:hsl(0, 0%, 8%);
+} 
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    border:1px solid;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px;
+    background-color: white;
+    margin-top:20px;
+    padding:10px 0;
+
+}
+.dropdown-content a{
+    color:hsl(0, 0%, 41%);
+    line-height: 2;
+    text-decoration: none;
+    font-weight:400;
+    font-size: 16px;
+    padding-top:60px;
+    
+}
+.show{
+    display:block;
 }
