@@ -28,6 +28,7 @@ nav{
     margin-left: 50px;
     font-weight:700;
     color:hsl(0, 0%, 8%);
+
 }
 h1{
     margin:0;
@@ -35,13 +36,16 @@ h1{
     font-weight: 700;
     font-size:2.5em;
 }
+.about a{
+    margin-left:0;
+    padding-left:5px;
+}
 a{
     margin:0 30px;
-    color:hsl(0, 0%, 8%);
     text-decoration: none;
     color:hsl(0, 0%, 41%);
-    font-size: 18px;
-    font-weight:700;
+    font-size: 16px;
+    font-weight:600;
 }
 a:hover, a:focus{
     color:hsl(0, 0%, 8%);
@@ -75,6 +79,7 @@ p{
     width:100%;
 }
 .learn-more-button button{
+    cursor:pointer;
     background-color:hsl(0, 0%, 98%);
     border-color:black;
     border-radius:15px;
@@ -82,14 +87,16 @@ p{
     font-weight: 700;
     text-decoration: none;
     margin:50px 0;
-    color:hsl(0, 0%, 8%);
+    color:hsl(0, 0%, 41%);
     font-size:25px;
     padding: 10px 25px; 
-
+}
+.learn-more-button button:hover, .learn-more-button button:focus{
+    color:hsl(0, 0%, 8%)
 }
 .watermark{
     margin-top:100px;
-    /* display:flex; */
+    display:flex;
 }
 
 .watermark img {
@@ -102,7 +109,7 @@ p{
     border:none;
     background-color:  hsl(0, 0%, 98%);
     color:hsl(0, 0%, 41%);
-    font-size: 18px;
+    font-size: 16px;
     font-weight:700;
 }
 .dropbtn:hover, .dropbtn:focus{
@@ -118,10 +125,11 @@ p{
     border:1px solid;
     border-style: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 1px 2px 6px;
     background-color: white;
     margin-top:20px;
     padding:10px 0;
+    width:160%;
 
 }
 .dropdown-content a{
@@ -129,10 +137,24 @@ p{
     line-height: 2;
     text-decoration: none;
     font-weight:400;
-    font-size: 16px;
-    padding-top:60px;
-    
+    font-size: 16px;  
+}
+.dropdown-content img{
+    margin-right:10px
 }
 .show{
     display:block;
+}
+.register{
+    cursor:pointer;
+    border:1.5px solid;
+    border-radius: 15px;
+    padding:10px 20px;
+    background-color:  hsl(0, 0%, 98%);
+    color:hsl(0, 0%, 41%);
+    font-size: 16px;
+    font-weight:700;
+}
+.register:hover, .register:focus{
+    color:hsl(0, 0%, 8%);
 }
