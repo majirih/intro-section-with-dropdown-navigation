@@ -15,114 +15,36 @@ header{
     color:hsl(0, 50%, 3%);
     margin-bottom:80px;
 }
-nav{
+.nav{
     display:flex;
     align-items: center;
     height:100%;
 }
-#company{
-    margin-left:30px;
-    margin-right:15px;
-    font-weight: 700;
-    color:hsl(0, 0%, 8%);
-}
-#features{
-    margin-left: 50px;
-    font-weight:700;
-    color:hsl(0, 0%, 8%);
-
-}
-h1{
+.nav__h1{
     margin:0;
     display:inline-block;
     font-weight: 700;
     font-size:2.5em;
 }
-.about a{
-    margin-left:0;
-    padding-left:5px;
-}
-a{
-    margin:0 30px;
-    text-decoration: none;
-    color:hsl(0, 0%, 41%);
-    font-size: 16px;
-    font-weight:600;
-}
-a:hover, a:focus{
-    color:hsl(0, 0%, 8%);
-}
-.container{
-    display:flex;
-    justify-content:space-around;
-    width:100%;
-    align-items: center;
-}
-.left-content{
-    width:35%;
-}
-.right-content{
-    width:40%;
-}
-h2{
-    font-size: 5em;
-    font-weight:700;
-    margin-top:0;
-    width:100%;
-}
-p{
-    font-size:25px;
-    color:hsl(0, 0%, 41%);
-    width:90%;
-    line-height: 1.5em;
-}
-.hero-image img{
-    height:100%;
-    width:100%;
-}
-.learn-more-button button{
-    cursor:pointer;
-    background-color:hsl(0, 0%, 98%);
-    border-color:black;
-    border-radius:15px;
-    border-style: solid;
-    font-weight: 700;
-    text-decoration: none;
-    margin:50px 0;
-    color:hsl(0, 0%, 41%);
-    font-size:25px;
-    padding: 10px 25px; 
-}
-.learn-more-button button:hover, .learn-more-button button:focus{
-    color:hsl(0, 0%, 8%)
-}
-.watermark{
-    margin-top:100px;
-    display:flex;
-    justify-content: space-between;
-}
-
-.watermark img {
-    width:100%;
-    margin: 0 15px ;
-}
-.dropbtn{
+.nav__dropbtn{
     margin-left:30px;
     cursor:pointer;
     border:none;
     background-color:  hsl(0, 0%, 98%);
     color:hsl(0, 0%, 41%);
+    font-family:'Epilogue', sans-serif;
     font-size: 16px;
-    font-weight:700;
+    font-weight:600;
+    padding:0;
 }
-.dropbtn:hover, .dropbtn:focus{
+.nav__dropbtn:hover, .nav__dropbtn:focus{
     color:hsl(0, 0%, 8%);
 } 
-.dropdown{
+.nav__dropdown{
     position:relative;
     display:inline-block;
 }
-.dropdown-content{
+.nav__dropdowncontent{
     display:none;
     position: absolute;
     border:1px solid;
@@ -134,20 +56,43 @@ p{
     padding:10px 0;
     width:160%;
 }
-.dropdown-content a{
+.nav__dropdowncontentlink{
     color:hsl(0, 0%, 41%);
     line-height: 2;
     text-decoration: none;
     font-weight:400;
     font-size: 16px;  
 }
-.dropdown-content img{
+.nav__dropdowncontentimg{
     margin-right:10px
 }
 .show{
     display:block;
 }
-.register{
+.nav_dropbtn--features{
+    margin-left: 50px;
+}
+.nav__dropbtn--company{
+    margin-left:30px;
+    margin-right:15px;   
+}
+.nav__link{
+    margin:0 30px;
+    text-decoration: none;
+    color:hsl(0, 0%, 41%);
+    font-size: 16px;
+    font-weight:600;
+}
+.nav__link:hover,:focus{
+    color:hsl(0, 0%, 8%);
+}
+.nav__link--careers{
+    margin:0 15px;
+}
+.nav__link--about{
+    margin:0 15px;  
+}
+.nav__register{
     cursor:pointer;
     border:1.5px solid;
     border-radius: 15px;
@@ -157,6 +102,65 @@ p{
     font-size: 16px;
     font-weight:700;
 }
-.register:hover, .register:focus{
+.nav__register:hover,:focus{
     color:hsl(0, 0%, 8%);
 }
+
+.container{
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    align-items: center;
+}
+.container__leftcontent{
+    width:35%;
+}
+.container__h2{
+    font-size: 5em;
+    font-weight:700;
+    margin-top:0;
+    width:100%;
+}
+.container__comment{
+    font-size:25px;
+    color:hsl(0, 0%, 41%);
+    width:90%;
+    line-height: 1.5em;
+}
+.container__learnmore{
+    cursor:pointer;
+    background-color:hsl(0, 0%, 8%);
+    border-color:black;
+    border-radius:15px;
+    border-style: solid;
+    font-weight: 700;
+    text-decoration: none;
+    margin:50px 0;
+    color:hsl(0, 0%, 98%);
+    font-size:25px;
+    padding: 10px 25px; 
+}
+.container__learnmore:hover,:focus{
+    color:hsl(0, 0%, 41%);
+    background-color:hsl(0, 0%, 98%);
+}
+.container__watermark{
+    margin-top:100px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.container__watermarkimg{
+    width:100%;
+    margin:0 15px ;
+}
+.container__rightcontent{
+    width:40%;
+}
+
+.container__heroimage{
+    height:100%;
+    width:100%;
+}
+
+

@@ -17,61 +17,58 @@
 <body>
     <header>
 
-        <nav>
-            <h1>snap</h1>
-            <div class="dropdown">
-                <button onClick="myFunction()" class="dropbtn">Features</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#"><img src="./images/icon-todo.svg">Todo List</a>
-                    <a href="#"><img src="images/icon-calendar.svg"> Calendar</a>
-                    <a href="#"><img src="./images/icon-reminders.svg"> Reminders</a>
-                    <a href="#"><img src="./images/icon-planning.svg"> Planning</a>
+        <nav class="nav">
+            <h1 class="nav__h1">snap</h1>
+            <div class="nav__dropdown">
+                <button onClick="myFunction()" class="nav__dropbtn nav_dropbtn--features">Features</button>
+                <div id="myDropdown" class="nav__dropdowncontent">
+                    <a class="nav__dropdowncontentlink" href="#"><img class="nav__dropdowncontentimg"
+                            src="./images/icon-todo.svg">Todo List</a>
+                    <a class="nav__dropdowncontentlink" href="#"><img class="nav__dropdowncontentimg"
+                            src="images/icon-calendar.svg"> Calendar</a>
+                    <a class="nav__dropdowncontentlink" href="#"><img class="nav__dropdowncontentimg"
+                            src="./images/icon-reminders.svg"> Reminders</a>
+                    <a class="nav__dropdowncontentlink" href="#"><img class="nav__dropdowncontentimg"
+                            src="./images/icon-planning.svg"> Planning</a>
                 </div>
             </div>
-            <div class="dropdown">
-                <button onClick="toggleDropdown()"
-                class="dropbtn">Company</button>
-                <div id="myDropdown2" class="dropdown-content">
-                    <a href="#">History</a>
-                    <a href="#">OurTeam</a>
-                    <a href="#">Blog</a>
+            <div class="nav__dropdown">
+                <button onClick="toggleDropdown()" class="nav__dropbtn nav__dropbtn--company">Company</button>
+                <div id="myDropdown2" class="nav__dropdowncontent">
+                    <a class="nav__dropdowncontentlink" href="#">History</a>
+                    <a class="nav__dropdowncontentlink" href="#">OurTeam</a>
+                    <a class="nav__dropdowncontentlink" href="#">Blog</a>
                 </div>
             </div>
-            <a href="#">Careers</a>
-          <div class="about">
-            <a href="#">About</a>
-        </div> 
+            <a class="nav__link nav__link--careers" href="#">Careers</a>
+            <a class="nav__link nav__link--about" href="#">About</a>
         </nav>
         <div>
-            <nav>
-                <a href="#">Login</a>
-                <button class="register">
+            <nav class="nav">
+                <a class="nav__link" href="#">Login</a>
+                <button class="nav__register">
                     Register
                 </button>
             </nav>
         </div>
     </header>
     <div class="container">
-        <div class="left-content">
-            <h2>Make remote work </h2>
-            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals and watch
+        <div class="container__leftcontent">
+            <h2 class="container__h2">Make<br>remote work </h2>
+            <p class="container__comment">Get your team in sync, no matter your location. Streamline processes, create
+                team rituals and watch
                 productivity soar.</p>
-            <div class="learn-more-button">
-                <button type="button">Learn more</button>
-            </div>
-            <div class="watermark">
-                <img src="./images/client-databiz.svg">
-                <img src="./images/client-audiophile.svg">
-                <img src="./images/client-meet.svg">
-                <img src="./images/client-maker.svg">
+            <button class="container__learnmore" type="button">Learn more</button>
+            <div class="container__watermark">
+                <img class="container__watermarkimg" src="./images/client-databiz.svg">
+                <img class="container__watermarkimg" src="./images/client-audiophile.svg">
+                <img class="container__watermarkimg" src="./images/client-meet.svg">
+                <img class="container__watermarkimg" src="./images/client-maker.svg">
             </div>
 
         </div>
-        <div class="right-content">
-
-            <div class="hero-image">
-                <img src="./images/image-hero-desktop.png">
-            </div>
+        <div class="container__rightcontent">
+            <img class="container__heroimage" src="./images/image-hero-desktop.png">
         </div>
     </div>
     <br>
